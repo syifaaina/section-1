@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Curriculum Vitae Form</title>
+
+    <style>
+      h1 {
+        color : green;
+        background-color : white;
+        font-family : Times New Roman;
+      }
+      ul {
+        list-style-type : none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+      }
+
+      li {
+        float : left;
+      }
+
+      li a {
+        display : block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color : brown;
+      }
+      label {
+        color : blue ;
+      }
+      p {
+        color : blue ;
+      }
+      input {
+        border : 1px solid black;
+      }
+      div {
+        border : 2px solid black;
+      }
+      a {
+        color : blue;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div >
+      <h1  align = "center">Curriculum Vitae Form</h1>
+    </div>
+    <nav>
+      <div>
+        <ul class="link-list">
+          <li><a href="#Personal">Personal details</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Skill">Skill</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <form>
+      <div>
+        <span><a name="Personal">Personal Details :</a></span>
+        <br><br>
+        <label>Full Name :</label>
+        <input type="text" name="name" value="" maxlength="30" required>
+        <br><br>
+        <label>Email : </label>
+        <input type="text" name="email" value="" maxlength="30" required>
+        <label>Phone Number : +60</label>
+        <input type="number" name="phonenumber" value="" maxlength="15" required>
+        <br><br>
+        <p> Birthday  <input type = "date"
+          name = "dates" required </p>
+        <label>Country : </label>
+        <input type="text" name="country" value="" maxlength="30" required>
+        <br><br>
+        <label>Upload your personal photo : </label>
+        <input type="text" name="photo" value="" maxlength="11" required>
+        <button type="button" name="buttons">Browse</button>
+      </div>
+
+      <div>
+          <span><a name="Education">Education :</a></span>
+          <br><br>
+        <label>Study Program :</label>
+        <input type="text" name="program" value="" maxlength="30" required>
+        <br><br>
+        <label> Start  <input type = "date"
+          name = "dates" required </label>
+        <label> End  <input type = "date"
+            name = "dates" required </label>
+        <input type="radio" name="Subject" value="present" checked> Present<br><br>
+        <label>Country :</label>
+        <input type="text" name="country" value="" maxlength="30" required>
+        <br><br>
+      </div>
+
+      <div>
+          <span><a name="Experience">Add your experience :</a></span>
+          <br><br>
+          <textarea name="experience" rows="4" cols="50" required></textarea>
+          <br><br>
+      </div>
+
+      <div>
+          <span><a name="Skill">Add your skill :</a></span>
+          <br><br>
+          <textarea name="skill" rows="4" cols="50" required></textarea>
+          <br><br>
+      </div>
+
+      <div>
+        <br>
+        <button type="button" name="buttons">Submit</button>
+        <button type="button" name="buttons">Reset</button>
+        <br><br>
+      </div>
+    </form>
+
+  </body>
+</html>
