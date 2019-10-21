@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>My Test Page</title>
+
+    <style>
+      input:invalid {
+        border: 2px dashed red;
+      }
+
+      input : valid{
+        border: 2px dashed black;
+      }
+      </style>
+  </head>
+
+  <body>
+
+    <form >
+      <p> Choose a Date  <input type = "date"
+        name = "dates" required </p>
+
+        <p>Choose number between 1 to 50
+           <input type = "number" min=0 max=50 name = "num" required </p>
+
+        <fieldset>
+          <legend> What is your favourite subject?</legend>
+          <input type="radio" name="Subject" value="maths" checked> Maths<br>
+          <input type="radio" name="Subject" value="science" checked> Science<br>
+          <input type="radio" name="Subject" value="biology" checked> Biology
+        </fieldset>
+
+      <p><select id = "course" name="course" >
+        <option selected> Study Level </option>
+        <option value="option1">Undergraduate</option>
+        <option value="option2">Postgraduate</option>
+        <option value="option3">Others</option>
+      </select></p>
+
+      <p><button type="button" name="buttons">Save</button>
+          <button type="button" name="buttons">Submit</button>
+      </p>
+    </form>
+
+  </body>
+</html>
