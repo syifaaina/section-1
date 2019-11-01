@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mahallah Login</title>
+    <style>
+      .tri {
+        width: 400px;
+        height : 400px;
+        float: left;
+        clip-path: polygon(100% 53%, 0 0, 0 100%);
+      }
+      .container {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+      button, .pword, .matricno{
+        width: 300px;
+        height: 30px;
+      }
+      .policy {
+        position: absolute;
+        bottom: 250px;
+        right: 250px;
+        font-size: 14px;
+      }
+      .disc {
+        position: absolute;
+        bottom: 250px;
+        right: 170px;
+        font-size: 14px;
+      }
+      p {
+        position: absolute;
+        bottom: 235px;
+        right: 70px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="tri" src="iium.jpg" alt="TriIIUM" width="500" height="333" >
+      <form>
+        <h1>Web-Based Mahallah <br> Pre-Registration</h1>
+        <h2>Login</h2>
+        <hr align="left" width="5%"color=green>
+        <input class="matricno" placeholder="Enter matric no" value="" maxlength="7" required></<input>
+        <br><br>
+        <input class="pword" placeholder="Enter password" type="password" id="pass" name="password"
+             minlength="8" required>
+        <br><br>
+        <input type="checkbox" name="remember" value=""> Remember me<br><br>
+        <button type="button" name="login">Login</button>
+    </form>
+
+    <div class="container">
+        <img src="iiumBanner.png" alt="Cinque Terre" width="200" height="50">
+    </div>
+
+    <a class="policy" href="http://www.iium.edu.my/division/residential-and-services-department/policies-guidelines">Privacy Policy</a>
+    <a class="disc" href="http://www.iium.edu.my/page/disclaimers">Disclaimer</a>
+    <p>Copyright 2019</p>
+  </body>
+</html>
